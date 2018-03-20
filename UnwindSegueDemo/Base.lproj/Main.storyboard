@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uET-TJ-bON">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PageA-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NavigationControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZN-TT-Wdq">
+                                <rect key="frame" x="128.5" y="315.5" width="118" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Go To PageB">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ld6-0L-tMS" kind="show" id="rnh-hi-WNq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RZN-TT-Wdq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lv9-fB-qYV"/>
+                            <constraint firstItem="RZN-TT-Wdq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iwy-CP-Diq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="PageA" id="WYS-XV-x2B"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460" y="133.5832083958021"/>
+        </scene>
+        <!--PageB-->
+        <scene sceneID="nS8-VU-SuD">
+            <objects>
+                <viewController id="ld6-0L-tMS" customClass="PageBViewController" customModule="NavigationControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q8J-IH-Ao4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0O-f2-5w2">
+                                <rect key="frame" x="128" y="315.5" width="119" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Go To PageC">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="X3J-Dg-8vU" kind="show" id="BBx-1P-m2p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="b0O-f2-5w2" firstAttribute="centerX" secondItem="q8J-IH-Ao4" secondAttribute="centerX" id="vAz-IB-Fb9"/>
+                            <constraint firstItem="b0O-f2-5w2" firstAttribute="centerY" secondItem="q8J-IH-Ao4" secondAttribute="centerY" id="zUc-n4-rKZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0qu-en-FTc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="PageB" id="84g-FV-3AR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zwi-rb-m78" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1224.8" y="133.5832083958021"/>
+        </scene>
+        <!--PageC-->
+        <scene sceneID="PWJ-Ma-AJy">
+            <objects>
+                <viewController id="X3J-Dg-8vU" customClass="PageCViewController" customModule="NavigationControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U6s-Nw-QPl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BU5-5h-Ns9">
+                                <rect key="frame" x="128" y="315.5" width="119" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Go To PageD">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Gcr-y6-9vT" kind="show" id="R5d-mP-0TJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BU5-5h-Ns9" firstAttribute="centerY" secondItem="U6s-Nw-QPl" secondAttribute="centerY" id="9Ty-LH-VOV"/>
+                            <constraint firstItem="BU5-5h-Ns9" firstAttribute="centerX" secondItem="U6s-Nw-QPl" secondAttribute="centerX" id="EMT-98-liL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="65L-jv-GdP"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="PageC" id="r4y-TK-The"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vs6-Ln-V6D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1972" y="133.5832083958021"/>
+        </scene>
+        <!--PageD-->
+        <scene sceneID="i1t-k7-BXI">
+            <objects>
+                <viewController id="Gcr-y6-9vT" customClass="PageDViewController" customModule="NavigationControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7zT-bv-FPA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hO1-12-LCa">
+                                <rect key="frame" x="106" y="315.5" width="163" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Unwind To PageB">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressBackToPageBButton:" destination="Gcr-y6-9vT" eventType="touchUpInside" id="MQk-bP-38d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.72549019609999998" green="0.91764705879999997" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hO1-12-LCa" firstAttribute="centerY" secondItem="7zT-bv-FPA" secondAttribute="centerY" id="Flc-eC-xOc"/>
+                            <constraint firstItem="hO1-12-LCa" firstAttribute="centerX" secondItem="7zT-bv-FPA" secondAttribute="centerX" id="bU4-vy-xa9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MiE-FR-v7e"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="PageD" id="hxm-UH-HGm"/>
+                    <connections>
+                        <segue destination="7Bz-xh-XN5" kind="unwind" identifier="BackToPageBSegue" unwindAction="unwindToPageBWithSegue:" id="vCU-Xu-Wqu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Qs-Hz-WY6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="7Bz-xh-XN5" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2732" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="760-Xb-FSC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uET-TJ-bON" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8xM-bY-zay">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hvS-ca-tMs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6kv-9J-o7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-319" y="134"/>
+        </scene>
+    </scenes>
+</document>
